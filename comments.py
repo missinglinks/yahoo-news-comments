@@ -11,7 +11,7 @@ DOMESTIC_NEWS = "https://news.yahoo.co.jp/hl?c=dom&p={page}&d={date}"
 COMMENT_API = "https://news.yahoo.co.jp/comment/plugin/v1/full/?origin=https%3A%2F%2Fheadlines.yahoo.co.jp&sort=lost_points&order=desc&page={page}&type=t&keys={keys}&full_page_url={url}&comment_num=50"
 REPLIES_API = "https://news.yahoo.co.jp/comment/plugin/v1/Markup/ReplyCommentList/?propertyId=sp_news&topicId={topic_id}&parentId={parent_id}&startNum={start}&resultNum=50"
 
-OUT_FILE = "data/articles.zip"
+OUT_FILE = "data/articles2.zip"
 
 def get_article_links(date):
     
@@ -162,6 +162,7 @@ def get_comments(article_id):
 
 
 dates = [
+    "20190223",
     "20190222",
     "20190221",
     "20190220",
